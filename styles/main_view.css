@@ -1,0 +1,126 @@
+.main_container {
+  position: relative;
+  height: 1000px;
+  margin-top: 10px;
+  padding: 0 80px;
+  overflow: hidden;
+}
+
+.feature_detail,
+.feature_details {
+  background-color: rgba(56, 241, 31, 0.61);
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  min-width: 100px;
+  /* padding: 3px; */
+  width: 100%;
+  text-align: center;
+}
+
+.details {
+  min-width: 100px;
+}
+
+.item_controllers,
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 14px;
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  padding: 2px;
+}
+
+select {
+  min-width: 90px;
+  font-size: 12px;
+  padding: 2px;
+  text-align: center;
+}
+
+.utility_cont {
+  padding: 5px;
+}
+
+.item_controllers {
+  height: 90px;
+}
+
+.item_cont {
+  height: 890px;
+  overflow-y: auto;
+}
+
+.items_view {
+  padding: 2px;
+  height: max-content;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+
+  gap: 8px;
+}
+
+.view_item {
+  max-height: 600px;
+  min-height: 410px;
+  max-width: 500px;
+  height: max-content;
+}
+
+.view_items_cont {
+  display: flex;
+  justify-content: center;
+}
+
+.advertisement_box {
+  position: absolute;
+  background-color: rgba(124, 121, 121, 0.425);
+  height: 100%;
+  top: 0;
+  width: 80px;
+}
+
+.box_left {
+  left: 0;
+}
+
+.box_right {
+  right: 0;
+}
+
+.featured_item {
+  position: relative;
+}
+
+.featured_item:hover {
+  cursor: pointer;
+  filter: blur(0px);
+}
+
+.item_cont::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 0, 0);
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.item_cont::-webkit-scrollbar {
+  width: 5px;
+}
+
+.item_cont::-webkit-scrollbar-track {
+  background: rgb(247, 244, 244);
+}
