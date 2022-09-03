@@ -35,7 +35,7 @@ const userSchema = new mongoose.Schema({
   },
   user_password: {
     type: String,
-    required: true,
+    required: [true, "Please confirm your password!"],
   },
   user_wishList: {
     type: Array,

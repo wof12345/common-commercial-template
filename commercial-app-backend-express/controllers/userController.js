@@ -39,3 +39,39 @@ exports.createAdmin = async (req, res) => {
     });
   }
 };
+
+//test
+// let timerQueues = new Map(); //to track active timers
+
+// const magicFunction = (givenTime, user) => {
+//   let curTime = new Date().toLocaleString();
+//   let newDate = new Date(curTime).getTime() / 1000;
+//   if (newDate >= givenTime) {
+//     //timer logic
+//     console.log("done", user);
+//     clearInterval(timerQueues.get(user));
+//     timerQueues.delete(user);
+//     console.log(timerQueues.keys());
+//   }
+//   console.log(newDate, givenTime);
+// };
+
+// async function mainCall(sayData) {
+//   let givenDate = new Date(sayData.date).toLocaleString();
+//   let givenTime = new Date(givenDate).getTime() / 1000; //get local time in seconds (starting from jan 1 1970 in milis)
+
+//   timerQueues.set(
+//     sayData.user,
+//     setInterval(() => {
+//       magicFunction(givenTime, sayData.user);
+//     }, 1000)
+//   );
+//   console.log(timerQueues.keys());
+// }
+
+// let sayData = [
+//   { user: "user1", date: "8/26/2022 07:40:00 AM" }, //get input in this format or convert to this format
+//   { user: "user2", date: "8/27/2022 07:41:00 PM" },
+// ];
+// mainCall(sayData[0]);
+// mainCall(sayData[1]);
